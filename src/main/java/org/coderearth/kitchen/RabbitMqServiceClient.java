@@ -3,14 +3,14 @@ package org.coderearth.kitchen;
 /**
  * Created by kunal_patel on 4/13/17.
  */
-public class RemoteServiceClient {
+public class RabbitMqServiceClient {
 
     private final String username;
     private final String password;
     private final int timeout;
     private final int retryThreshold;
 
-    public RemoteServiceClient(String username, String password, int timeout, int retryThreshold) {
+    public RabbitMqServiceClient(String username, String password, int timeout, int retryThreshold) {
         this.username = username;
         this.password = password;
         this.timeout = timeout;
