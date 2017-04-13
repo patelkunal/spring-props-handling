@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+    <bean id="serviceClient" class="org.coderearth.kitchen.RemoteServiceClient">
+        <constructor-arg name="username" value="${app.client.username}"/>
+        <constructor-arg name="password" value="${app.client.password}"/>
+        <constructor-arg name="timeout" value="${app.client.timeout:200}"/>
+        <constructor-arg name="retryThreshold" value="${app.client.retry.threshold:3}"/>
+    </bean>
+
+
+</beans>
