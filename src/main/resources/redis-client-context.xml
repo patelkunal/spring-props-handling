@@ -6,6 +6,7 @@
     <bean id="redisServiceClient" class="org.coderearth.kitchen.RedisServiceClient">
         <constructor-arg name="username" value="${app.client.username}"/>
         <constructor-arg name="password" value="${app.client.password}"/>
+        <constructor-arg name="recipients" type="java.lang.String[]" value="#{'${app.recipients}'.split(',')}"/>
     </bean>
 
 
